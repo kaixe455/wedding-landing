@@ -1,6 +1,7 @@
 ---
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import { SEO } from "astro-seo";
 
 import { ViewTransitions } from "astro:transitions";
 
@@ -16,14 +17,43 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta
-      name="Boda de Pilar y Luis - 4 de mayo de 2024"
+      name="description"
       content="Boda de Pilar y Luis - 4 de mayo de 2024"
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <ViewTransitions />
+    <SEO
+      title={title}
+      description="Boda de Pilar y Luis - 4 de mayo de 2024"
+      openGraph={{
+        basic: {
+          title: "Boda de Pilar y Luis - 4 de mayo de 2024",
+          type: "Landing page",
+          image: "https://boda-pilar-luis.pages.dev/imgs/hero.webp",
+        },
+      }}
+      twitter={{
+        creator: "@angelangulo95",
+      }}
+      extend={{
+        meta: [
+          {
+            name: "twitter:image",
+            content: "https://boda-pilar-luis.pages.dev/imgs/hero.webp",
+          },
+          {
+            name: "twitter:title",
+            content: "Boda de Pilar y Luis - 4 de mayo de 2024",
+          },
+          {
+            name: "twitter:description",
+            content: "Boda de Pilar y Luis - 4 de mayo de 2024",
+          },
+        ],
+      }}
+    />
   </head>
   <body>
     <Header />
