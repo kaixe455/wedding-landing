@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				greatvibes: ['GreatVibes', 'system-ui', 'sans-serif']
+				greatvibes: ['GreatVibes', 'system-ui', 'sans-serif'],
+				salsa: ['Salsa', 'system-ui', 'sans-serif']
 			}
 		},
 	},
