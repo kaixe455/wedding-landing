@@ -20,14 +20,11 @@ const { title } = Astro.props;
       name="description"
       content="Toda la información sobre nuestra boda, el 4 de mayo de 2024"
     />
-    <meta
-      property="og:image:secure_url"
-      content="https://boda-pilly-luis.pages.dev/imgs/hero.png"
-    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
     <SEO
       title={title}
       description="Boda de Luis y Pilly"

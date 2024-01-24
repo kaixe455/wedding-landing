@@ -1,0 +1,160 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import SectionTitle from "@components/SectionTitle.astro";
+import Recomendation from "@components/Recomendation.astro";
+---
+
+<Layout title="Boda Luis y Pilly - Recomendaciones">
+  <main class="text-white" transition:animate="slide">
+    <Container>
+      <SectionTitle title="Hoteles" />
+      <div class="grid grid-cols-1">
+        <div class="col-span-1">
+          <div
+            class="grid sm:grid-cols-4 grid-cols-1 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00] rounded-lg"
+            id="hoteles"
+          >
+            <Recomendation
+              name="Suites de Puerto Sherry"
+              telephone="956 862 500"
+              address="Polígono del Puerto deportivo, 2ª, 11500 El puerto de Santa María."
+            />
+            <Recomendation
+              name="Hotel de Puerto Sherry"
+              telephone="956 872 000"
+              address="Avenida de la libertad s/n, 11500, El Puerto de Santa María"
+            />
+            <Recomendation
+              name="Apartamentos Soho Boutique"
+              telephone="956 873 411"
+              address="Calle Amparo Osborne Vázquez, 3, 11500, El Puerto de Santa Maria"
+            />
+            <Recomendation
+              name="Soho Boutique"
+              telephone="956 87 32 11"
+              address="Calle Los moros, 1, 11500, El Puerto de Santa Maria"
+            />
+          </div>
+        </div>
+        <SectionTitle title="Restaurantes" />
+        <div class="grid grid-cols-1">
+          <div class="col-span-1">
+            <div
+              class="grid sm:grid-cols-4 grid-cols-1 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00] rounded-lg"
+              id="restaurantes"
+            >
+              <Recomendation
+                name="Narigoni"
+                telephone="856 22 91 84"
+                address="C. de las Magnolias, 35, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Los mejores desayunos de todo El puerto, comida casual and fresh."
+              />
+              <Recomendation
+                name="Kamikaze"
+                telephone="655 07 87 33"
+                address="C. del Vivero, 7, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Sushi y copas, la combinación perfecta para pasarlo bien."
+              />
+              <Recomendation
+                name="El lentisco"
+                telephone="658 94 16 04"
+                address="C. del Vivero, 41, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Tapeo informal, los mejores mejillones."
+              />
+              <Recomendation
+                name="Plato al centro"
+                telephone="956 54 31 76"
+                address="Av. Juan Melgarejo, S/N, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Comida para compartir, muy recomendable el atún."
+              />
+              <Recomendation
+                name="Sarmiento"
+                telephone="956 52 08 86"
+                address="C. Girasol, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Comida elaborada."
+              />
+              <Recomendation
+                name="Tk3"
+                telephone="621 32 08 76"
+                address="C. Goleta, 40, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Ideal para tomar una copa frente al mar."
+              />
+              <Recomendation
+                name="La ponderosa"
+                telephone="956 87 15 01"
+                address="Av. de la Constitución, 6, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Mejores churros de El Puerto de Santa María, típico para desayunar."
+              />
+              <Recomendation
+                name="Avanico"
+                telephone="662 93 53 18"
+                address="C. Ribera del Río, 9, Local, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Pescado fresco, ideal para comer frente al mar."
+              />
+              <Recomendation
+                name="Mesón del asador"
+                telephone="956 54 03 27"
+                address="C. Misericordia, 2, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Plan perfecto para ir a la barra a tapear carne."
+              />
+              <Recomendation
+                name="La bodeguita el jamón"
+                telephone="956 85 03 22"
+                address="C. Misericordia, 5, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Un clásico portuense, muy ricas las tostas."
+              />
+              <Recomendation
+                name="Bar Betis"
+                telephone="956 54 26 01"
+                address="C. Misericordia, 7, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Muy ricas albóndigas y casquería"
+              />
+              <Recomendation
+                name="Cervecería Puerto."
+                telephone="956 85 89 39"
+                address="C. Misericordia, 17, 11500 El Puerto de Sta María, Cádiz"
+                descripcion="Frituras y marisco."
+              />
+            </div>
+          </div>
+        </div>
+        <SectionTitle title="Peluquerias" />
+        <div class="grid grid-cols-1">
+          <div class="col-span-1">
+            <div
+              class="grid sm:grid-cols-4 grid-cols-1 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00] rounded-lg mb-5"
+              id="peluquerias"
+            >
+              <Recomendation
+                name="Avance peluqueros"
+                telephone="956540855"
+                address="En el centro comercial de Vista hermosa"
+              />
+              <Recomendation
+                name="Salón Marta y Maria"
+                telephone="618808424"
+                address="En Valdelagrana"
+              />
+              <Recomendation
+                name="Amaya Reyes Peluquería"
+                telephone="956876746"
+                address="En el centro comercial de Vista Hermosa"
+              />
+              <Recomendation
+                name="Drago y Ortega"
+                telephone="956482272"
+                address="El Puerto de Santa María"
+              />
+              <Recomendation
+                name="Peluquería Cairon de Bohemio"
+                telephone="956857705"
+                address="Cerca de la plaza de toros"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
