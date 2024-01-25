@@ -1,36 +1,50 @@
-<section
-  class="w-full p-10 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00]"
-  id="transport"
->
-  <div class="grid sm:grid-cols-2 grid-cols-1">
-    <div class="col-span-1 flex flex-col sm:justify-center items-center p-5">
-      <span class="font-greatvibes text-5xl mt-5">Ida</span>
-      <span class="sm:text-xl text-lg font-salsa mt-2"
-        >- <span class="font-bold">12:00</span> El Puerto de Sta Maria - IGL San
-        Miguel
-      </span>
-      <span class="sm:text-xl text-lg my-5 font-salsa"
-        >- <span class="font-bold">14:30</span> IGL San Miguel - Finca Viña Bristol</span
-      >
+---
+import SectionTitle from "@components/SectionTitle.astro";
+---
+
+<section class="w-full p-8" id="transport">
+  <div class="grid sm:grid-cols-1 grid-cols-1 bg-white rounded-xl">
+    <div class="grid grid-rows-1">
+      <div class="row-span-1">
+        <SectionTitle title="Transporte | El Puerto - Jerez" />
+      </div>
     </div>
-    <div class="col-span-1 flex flex-col justify-center items-center p-5">
-      <span class="font-greatvibes text-5xl mt-5">Vuelta</span>
-      <span class="sm:text-xl text-lg font-salsa"
-        >Los autobuses saldrán desde Viña Bristol haciendo parada en el Centro
-        Comercial de Vistahermosa y en Puerto Sherry:</span
-      >
-      <span class="sm:text-xl text-lg my-2 font-salsa"
-        >– <span class="font-bold">21:00 pm</span> Viña Bristol - Jerez/Puerto
-      </span>
-      <span class="sm:text-xl text-lg my-2 font-salsa"
-        >– <span class="font-bold">23:00 pm</span> Viña Bristol - Jerez/Puerto
-      </span>
-      <span class="sm:text-xl text-lg my-2 font-salsa"
-        >– <span class="font-bold">00:00 pm</span> Viña Bristol - Jerez/Puerto</span
-      >
-      <span class="sm:text-xl text-lg my-2 font-salsa"
-        >– <span class="font-bold">02:00 pm</span> Viña Bristol - Jerez/Puerto</span
-      >
+    <div class="grid grid-rows-1">
+      <div class="row-span-1">
+        <div
+          class="col-span-1 flex flex-col sm:justify-start items-center p-5 text-center"
+        >
+          <span class="font-greatvibes sm:text-5xl text-xl mt-5 mb-3">Ida</span>
+          <span class="sm:text-xl text-lg font-salsa mt-2"
+            >- <span class="font-bold">12:00</span> El Puerto de Sta Maria - IGL
+            San Miguel
+          </span>
+          <span class="sm:text-xl text-lg my-5 font-salsa"
+            >- <span class="font-bold">14:30</span> IGL San Miguel - Finca Viña Bristol</span
+          >
+        </div>
+        <div class="col-span-1 flex flex-col justify-start items-center p-5">
+          <span class="font-greatvibes sm:text-5xl text-xl mt-5 mb-3"
+            >Vuelta</span
+          >
+          <span class="sm:text-xl text-lg font-salsa text-center mb-3"
+            >Los autobuses saldrán desde Viña Bristol haciendo parada en el
+            Centro Comercial de Vistahermosa y en Puerto Sherry:</span
+          >
+          <span class="sm:text-xl text-lg my-2 font-salsa"
+            >– <span class="font-bold">21:00</span> Viña Bristol - Jerez/Puerto
+          </span>
+          <span class="sm:text-xl text-lg my-2 font-salsa"
+            >– <span class="font-bold">23:00</span> Viña Bristol - Jerez/Puerto
+          </span>
+          <span class="sm:text-xl text-lg my-2 font-salsa"
+            >– <span class="font-bold">00:00</span> Viña Bristol - Jerez/Puerto</span
+          >
+          <span class="sm:text-xl text-lg my-2 font-salsa"
+            >– <span class="font-bold">02:00</span> Viña Bristol - Jerez/Puerto</span
+          >
+        </div>
+      </div>
     </div>
   </div>
 </section>
