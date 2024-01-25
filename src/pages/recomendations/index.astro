@@ -8,13 +8,10 @@ import Recomendation from "@components/Recomendation.astro";
 <Layout title="Boda Luis y Pilly - Recomendaciones">
   <main class="text-white p-4" transition:animate="slide">
     <Container>
-      <SectionTitle title="Hoteles" />
       <div class="grid grid-cols-1">
-        <div class="col-span-1">
-          <div
-            class="grid sm:grid-cols-4 grid-cols-1 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00] rounded-lg"
-            id="hoteles"
-          >
+        <div class="col-span-1 my-5 bg-white rounded-lg p-4">
+          <SectionTitle title="Hoteles" />
+          <div class="grid sm:grid-cols-4 grid-cols-1" id="hoteles">
             <Recomendation
               name="Suites de Puerto Sherry"
               telephone="956 862 500"
@@ -37,13 +34,10 @@ import Recomendation from "@components/Recomendation.astro";
             />
           </div>
         </div>
-        <SectionTitle title="Restaurantes" />
         <div class="grid grid-cols-1">
-          <div class="col-span-1">
-            <div
-              class="grid sm:grid-cols-4 grid-cols-1 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00] rounded-lg"
-              id="restaurantes"
-            >
+          <div class="col-span-1 my-5 bg-white rounded-lg p-4">
+            <SectionTitle title="Restaurantes" />
+            <div class="grid sm:grid-cols-4 grid-cols-1" id="restaurantes">
               <Recomendation
                 name="Narigoni"
                 telephone="856 22 91 84"
@@ -119,11 +113,12 @@ import Recomendation from "@components/Recomendation.astro";
             </div>
           </div>
         </div>
-        <SectionTitle title="Peluquerias" />
+
         <div class="grid grid-cols-1">
-          <div class="col-span-1">
+          <div class="col-span-1 bg-white rounded-lg my-5 p-4">
+            <SectionTitle title="Peluquerías" />
             <div
-              class="grid sm:grid-cols-4 grid-cols-1 bg-gradient-to-br from-slate-100 via-gray-300 to-[#78716c00] rounded-lg mb-5"
+              class="grid sm:grid-cols-4 grid-cols-1 bg-white rounded-lg mb-5"
               id="peluquerias"
             >
               <Recomendation
