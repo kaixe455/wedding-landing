@@ -11,8 +11,8 @@ interface Props {
 const { name, telephone, address, descripcion } = Astro.props;
 ---
 
-<div class="col-span-1 text-black font-salsa p-3">
-  <h2 class="text-2xl font-bold">{name}</h2>
+<div class="col-span-1 font-salsa text-black p-3">
+  <h2 class="text-2xl font-bold font-greatvibes text-[#084520]">{name}</h2>
   {descripcion && <p class="text-sm">{descripcion}</p>}
 
   <p class="text-lg">{address}</p>
