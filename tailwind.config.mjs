@@ -4,8 +4,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				greatvibes: ['Helvetica', 'system-ui', 'sans-serif'],
-				salsa: ['Calibri Light', 'system-ui', 'sans-serif']
+				greatvibes: ['DancingScript', 'system-ui', 'sans-serif'],
+				salsa: ['Calibri Light', 'system-ui', 'sans-serif'],
+
 			},
 			backgroundImage: {
 				'main': "url('/imgs/bg.webp')"
