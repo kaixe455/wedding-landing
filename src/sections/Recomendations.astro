@@ -1,4 +1,8 @@
-<section class="mb-32 mt-10 p-8 sm:p-0" id="recomendations">
+---
+import RecomendationButton from "@components/RecomendationButton.astro";
+---
+
+<section class="mb-32 mt-10 p-8 xl:p-0" id="recomendations">
   <div
     class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('/imgs/puerto.webp')] h-[500px] rounded-xl"
   >
@@ -12,33 +16,37 @@
           >
             Recomendaciones
           </h2>
-          <a
-            href="/recomendations#hoteles"
-            type="button"
-            class="rounded border-2 m-3 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium font-salsa uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            HOTELES
-          </a>
-          <a
-            href="/recomendations#peluquerias"
-            type="button"
-            class="rounded border-2 m-3 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase font-salsa leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            PELUQUERIAS
-          </a>
-          <a
-            href="/recomendations#restaurantes"
-            type="button"
-            class="rounded border-2 m-3 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase font-salsa leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            RESTAURANTES
-          </a>
+          <div class="grid grid-rows-3 sm:hidden">
+            <div class="row-span-1 mb-10">
+              <RecomendationButton
+                url="/recomendations#hoteles"
+                text="HOTELES"
+              />
+            </div>
+            <div class="row-span-1 mb-7">
+              <RecomendationButton
+                url="/recomendations#peluquerias"
+                text="PELUQUERIAS"
+              />
+            </div>
+            <div class="row-span-1 mb-7">
+              <RecomendationButton
+                url="/recomendations#restaurantes"
+                text="RESTAURANTES"
+              />
+            </div>
+          </div>
+          <div class="hidden sm:flex">
+            <RecomendationButton url="/recomendations#hoteles" text="HOTELES" />
+            <RecomendationButton
+              url="/recomendations#peluquerias"
+              text="PELUQUERIAS"
+            />
+            <RecomendationButton
+              url="/recomendations#restaurantes"
+              text="RESTAURANTES"
+            />
+          </div>
         </div>
       </div>
     </div>
