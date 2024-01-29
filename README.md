@@ -15,8 +15,8 @@ This project is an informative website with wedding content. You can see place a
 
 ### Home
 
-![Home preview](https://github.com/kaixe455/wedding-landing/blob/main/home.png?raw=true)
+![Home preview](https://github.com/kaixe455/wedding-landing/blob/master/home.png?raw=true)
 
 ### Recomendations
 
-![About us preview](https://github.com/kaixe455/wedding-landing/blob/main/recs.png?raw=true)
+![About us preview](https://github.com/kaixe455/wedding-landing/blob/master/recs.png?raw=true)
